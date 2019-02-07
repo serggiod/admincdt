@@ -188,8 +188,6 @@ window.dhx4.application = {
                         reader.fileName = dirname+'/'+input.files[i].name;
                         reader.readAsDataURL(input.files[i]);
                         reader.addEventListener('loadend',function(file){
-                            console.log(file.target.fileName);
-                            console.log(file.target.result);
                             files.push({
                                 name:file.target.fileName,
                                 content:file.target.result
