@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>LEGISLATURA | Cuerpo de Taquigrafos</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="/jscdn/dhtmlx/dhtmlx.css" type="text/css">
+        <script src="/jscdn/dhtmlx/dhtmlx.js"></script>
+        <script src="/login/factory/window.dhx4.session.js"></script>
+        <script src="application.js"></script>
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body id="dhx4AppContainer">
+        <script>
+            var doc = document || window.document;
+            doc.addEventListener('DOMContentLoaded',function(){
+                window.dhx4.session.autorize(function(){
+                    window.dhx4.application.init();
+                });
+            });
+        </script>
+    </body>
+</html>
